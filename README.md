@@ -24,15 +24,16 @@ A Python-based rover simulator that processes movement and turning instructions 
 
 Each line in the file should contain one instruction in the following format:
 
-- **Turn Instructions**: `turn [degrees] [clockwise|counterclockwise]`
-- **Move Instructions**: `move [meters] [forward|backward]`
+- **Turn Instructions**: `turn <angle> degrees [clockwise|counterclockwise]`
+- **Move Instructions**: `Move <distance> meters [backward|forward]`
 
 Degrees should be between 0 and 360, and meters should be positive.
 
 **Example**:
 ```txt
-move 5 forward
-turn 90 clockwise
-move 10 backward
-turn 45 counterclockwise
+Move 10 meters forward
+Turn 45 degrees clockwise
+Move 5 meters forward
+Turn 30 degrees counterclockwise
+Move 10 meters forward
 
